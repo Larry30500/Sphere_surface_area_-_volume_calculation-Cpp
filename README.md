@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  [指定專題作品 C++] 計算球體之表面積&體積
+  [指定專題作品 C++] 計算球體之表面積與體積
 </h1>
 
 
@@ -15,20 +15,49 @@
 &nbsp;
 
 ## 摘要
-### 1. 
-### 2. 
-### 3. 
+### 使用者輸入半徑後，可即時的計算出球體之表面積與體積。
 
-![arithmetic_python](images/arithmetic_python.gif)
+
+![calculation](images/calculation.gif)
 
 <strong><em>假使想要更加了解此程式的話，請參考本頁面底部之作者的聯絡方式。</em></strong>
 
 &nbsp;
 
 ## 重點程式碼說明
-### 132
+### 步驟 1：使用 ```類別 (class)``` 宣告 球體表面積 與 球體體積 的成員函式，並定義其權限為 ```public```。
 ```cpp
-# 123。
+class Class_Sphere
+{
+  public:
+    double sphere_surface_area(double radius)
+    {
+      ⋮
+    }
+
+    double sphere_volume(double radius)
+    {
+      ⋮
+    }
+};
+
+```
+
+&nbsp;
+
+### 步驟 2：當使用者輸入半徑後，將計算後的結果輸出。
+```cpp
+int main()
+{
+  cout << "請輸入半徑的數值：";
+  cin >> current_radius;
+
+  Class_Sphere calculation;
+
+  ⋮
+
+  return 0;
+}
 ```
 
 &nbsp;
